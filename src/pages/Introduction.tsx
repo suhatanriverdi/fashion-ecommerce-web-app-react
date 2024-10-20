@@ -22,7 +22,7 @@ function Introduction() {
           }}
         >
           <img
-            className="object-cover sm:w-[500px] w-[300px]"
+            className="object-cover h-[320px] sm:h-[500px] w-full"
             src="/images/men.jpg"
             alt="Model men photo"
           />
@@ -37,7 +37,7 @@ function Introduction() {
           }}
         >
           <img
-            className="object-cover sm:w-[500px] w-[260px]"
+            className="object-cover h-[320px] sm:h-[500px] w-full"
             src="/images/women.jpg"
             alt="Model women photo"
           />
