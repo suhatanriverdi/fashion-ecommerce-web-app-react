@@ -4,10 +4,9 @@
 
 /* CSS Reset */
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Nova Flat", sans-serif, "Nova Flat", system-ui;
-    user-select: none;
-  }
-  
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nova Flat", sans-serif, "Nova Flat", system-ui;
+  user-select: none;
+}
