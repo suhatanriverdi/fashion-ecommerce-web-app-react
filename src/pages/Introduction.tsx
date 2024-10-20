@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 function Introduction() {
   return (
     <div className="flex justify-center items-center h-screen w-screen">
-      <h1 className="z-10 text-[9rem] md:text-[18rem] text-white drop-shadow-[0_20px_20px_rgba(0,0,0,0.6)] fixed">
+      <h1 className="z-10 text-[9rem] md:text-[18rem] text-white drop-shadow-[0_20px_20px_rgba(0,100,50,0.9)] fixed">
         <motion.div
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
