@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export default function Advertisement() {
   return (
@@ -51,17 +52,32 @@ export default function Advertisement() {
         <p className="text-xl text-center mb-[4rem]">
           Koleksiyonlara gitmek için seçim yapınız
         </p>
-        <div className="flex justify-between items-center mb-[12rem]">
-          <img
-            className="object-cover"
-            src="/images/introduction/women.jpg"
-            alt="Women"
-          />
-          <img
-            className="object-cover"
-            src="/images/introduction/men.jpg"
-            alt="Men"
-          />
+        <div className="flex justify-evenly items-center">
+          <Link to="/products">
+            <div className="max-w-[500px] overflow-hidden">
+              <img
+                className="object-cover hover:scale-110 transition-all duration-300 overflow-hidden"
+                src="/images/introduction/women.jpg"
+                alt="Women"
+              />
+            </div>
+            <p className="text-center text-white mix-blend-overlay font-bold pointer-events-none text-[10rem] relative -top-[400px]">
+              KADIN
+            </p>
+          </Link>
+
+          <Link to="/products">
+            <div className="max-w-[500px] overflow-hidden">
+              <img
+                className="object-cover hover:scale-110 transition-all duration-300 overflow-hidden"
+                src="/images/introduction/men.jpg"
+                alt="Men"
+              />
+            </div>
+            <p className="text-center text-white mix-blend-overlay font-bold pointer-events-none text-[10rem] relative -top-[400px]">
+              ERKEK
+            </p>
+          </Link>
         </div>
       </div>
     </motion.div>
