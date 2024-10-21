@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function Advertisement() {
   const navigate = useNavigate();
@@ -26,8 +26,8 @@ export default function Advertisement() {
             ease: "anticipate",
           }}
         >
-          <div className="max-w-[80rem] w-full">
-            <h1 className="text-4xl text-center mt-[4rem]">GÜLLÜ</h1>
+          <div className="md:max-w-[80rem] max-w-[40rem] w-full">
+            <h1 className="text-3xl text-center mt-[4rem]">GÜLLÜ</h1>
 
             <div className="flex items-center justify-between mt-[12rem] w-full px-[8rem]">
               <img
@@ -74,7 +74,7 @@ export default function Advertisement() {
                     alt="Women"
                   />
                 </div>
-                <p className="text-center text-white mix-blend-overlay font-bold pointer-events-none text-[10rem] relative -top-[400px]">
+                <p className="text-center text-white mix-blend-overlay pointer-events-none text-[10rem] relative -top-[400px]">
                   KADIN
                 </p>
               </div>
@@ -87,7 +87,7 @@ export default function Advertisement() {
                     alt="Men"
                   />
                 </div>
-                <p className="text-center text-white mix-blend-overlay font-bold pointer-events-none text-[10rem] relative -top-[400px]">
+                <p className="text-center text-white mix-blend-overlay pointer-events-none text-[10rem] relative -top-[400px]">
                   ERKEK
                 </p>
               </div>

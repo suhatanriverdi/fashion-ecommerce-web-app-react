@@ -5,7 +5,7 @@ import "./index.css";
 
 import Introduction from "./pages/Introduction.tsx";
 import Advertisement from "./pages/Advertisement.tsx";
-import Products from "./pages/products.tsx";
+import Products from "./pages/Products.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 // React Router
