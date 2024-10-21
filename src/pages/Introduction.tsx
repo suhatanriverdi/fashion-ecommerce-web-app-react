@@ -14,7 +14,7 @@ export default function Introduction() {
     // Forward to advertisement page after 3 seconds
     const timer = setTimeout(() => {
       nagivate("/advertisement");
-    }, 3800);
+    }, 3600);
 
     return () => {
       clearTimeout(timer);
@@ -31,7 +31,7 @@ export default function Introduction() {
           animate={{ scale: 1, opacity: 1 }}
           exit={{ scale: 0.8, opacity: 0, y: 100, z: -100 }}
           transition={{
-            duration: 1,
+            duration: 0.8,
             ease: "anticipate",
           }}
           className="flex justify-center items-center h-screen w-screen"

@@ -7,9 +7,18 @@ export default function Advertisement() {
       initial={{ y: 1000, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       exit={{ y: 1000, opacity: 0 }}
-      transition={{ duration: 1, ease: "easeInOut" }}
+      transition={{
+        duration: 0.8,
+        ease: "anticipate",
+      }}
     >
       <h1 className="text-9xl">Advertisement</h1>
+      <a
+        className="cursor-pointer border-x-sky-200 border bg-blue-200 rounded-2xl p-5 mt-10"
+        href="/"
+      >
+        Go Back to Home Page
+      </a>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. In nobis
         commodi corporis esse! Officia rerum cupiditate dicta, soluta facere ab.
