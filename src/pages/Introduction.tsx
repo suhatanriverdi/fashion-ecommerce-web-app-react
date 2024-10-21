@@ -1,6 +1,19 @@
 import { motion } from "framer-motion";
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Introduction() {
+  const nagivate = useNavigate();
+
+  useEffect(() => {
+    // Forward to advertisement page after 3 seconds
+    const timer = setTimeout(() => {
+      nagivate("/advertisement");
+    }, 3300);
+
+    return () => clearTimeout(timer);
+  }, [nagivate]);
+
   return (
     <div className="flex justify-center items-center h-screen w-screen">
       <h1 className="z-10 text-[9rem] md:text-[18rem] text-white drop-shadow-[0_20px_20px_rgba(0,100,50,0.9)] fixed">
