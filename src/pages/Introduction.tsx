@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-function Introduction() {
+export default function Introduction() {
   return (
     <div className="flex justify-center items-center h-screen w-screen">
       <h1 className="z-10 text-[9rem] md:text-[18rem] text-white drop-shadow-[0_20px_20px_rgba(0,100,50,0.9)] fixed">
@@ -46,5 +46,3 @@ function Introduction() {
     </div>
   );
 }
-
-export default Introduction;
