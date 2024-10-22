@@ -26,8 +26,8 @@ export default function Advertisement() {
             ease: "anticipate",
           }}
         >
-          <div className="tablet:max-w-[30rem] desktop:max-w-[80rem] max-w-[20rem] w-full">
-            <h1 className="text-xl  desktop:text-3xl text-center mt-[4rem]">
+          <div className="tablet:max-w-[30rem] desktop:max-w-[80rem] w-full">
+            <h1 className="text-xl desktop:text-3xl text-center mt-[4rem]">
               GÜLLÜ
             </h1>
 
