@@ -26,8 +26,8 @@ export default function Advertisement() {
             ease: "anticipate",
           }}
         >
-          <div className="md:max-w-[80rem] max-w-[40rem] w-full">
-            <h1 className="text-3xl text-center mt-[4rem]">GÜLLÜ</h1>
+          <div className="md:max-w-[80rem] max-w-[20rem] w-full">
+            <h1 className="text-xl md:text-3xl text-center mt-[4rem]">GÜLLÜ</h1>
 
             <div className="flex items-center justify-between mt-[12rem] w-full px-[8rem]">
               <img
@@ -35,13 +35,13 @@ export default function Advertisement() {
                 src="/images/advertisement/green.jpg"
                 alt="Women Wearing Green Sweats"
               />
-              <p className="text-9xl">SADE</p>
+              <p className="text-4xl sm:text-9xl">SADE</p>
             </div>
 
             <div className="flex items-center justify-between mt-[12rem] w-full px-[8rem]">
-              <p className="text-9xl">BOL</p>
+              <p className="text-4xl sm:text-9xl">BOL</p>
               <img
-                className=""
+                className="object-cover"
                 src="/images/advertisement/blue.jpg"
                 alt="Women Wearing Green Sweats"
               />
@@ -49,45 +49,45 @@ export default function Advertisement() {
 
             <div className="flex items-center justify-between mt-[12rem] w-full px-[8rem]">
               <img
-                className=""
+                className="object-cover"
                 src="/images/advertisement/orange.jpg"
                 alt="Women Wearing Green Sweats"
               />
               <div>
                 <p className="text-3xl text-center">ve</p>
-                <p className="text-9xl">RAHAT</p>
+                <p className="text-4xl sm:text-9xl">RAHAT</p>
               </div>
             </div>
 
-            <h1 className="text-9xl text-center mt-[24rem] mb-[4rem]">
+            <h1 className="text-4xl sm:text-9xl text-center mt-[24rem] mb-[4rem]">
               TAKILANLARA
             </h1>
-            <p className="text-xl text-center mb-[4rem]">
+            <p className="text-md sm:text-3xl text-center mb-[4rem]">
               Koleksiyonlara gitmek için seçim yapınız
             </p>
-            <div className="flex justify-evenly items-center">
+            <div className="flex justify-between items-center">
               <div className="cursor-pointer" onClick={handleShow}>
-                <div className="max-w-[500px] overflow-hidden">
+                <div className="max-w-[140px] sm:max-w-[500px] overflow-hidden">
                   <img
                     className="object-cover hover:scale-110 transition-all duration-300 overflow-hidden"
                     src="/images/introduction/women.jpg"
                     alt="Women"
                   />
                 </div>
-                <p className="text-center text-white mix-blend-overlay pointer-events-none text-[10rem] relative -top-[400px]">
+                <p className="text-center text-white mix-blend-overlay pointer-events-none text-[2.2rem] sm:text-[10rem] relative -top-[100px] sm:-top-[400px]">
                   KADIN
                 </p>
               </div>
 
               <div className="cursor-pointer" onClick={handleShow}>
-                <div className="max-w-[500px] overflow-hidden">
+                <div className="max-w-[140px] sm:max-w-[500px] overflow-hidden">
                   <img
                     className="object-cover hover:scale-110 transition-all duration-300 overflow-hidden"
                     src="/images/introduction/men.jpg"
                     alt="Men"
                   />
                 </div>
-                <p className="text-center text-white mix-blend-overlay pointer-events-none text-[10rem] relative -top-[400px]">
+                <p className="text-center text-white mix-blend-overlay pointer-events-none text-[2.2rem] sm:text-[10rem] relative -top-[100px] sm:-top-[400px]">
                   ERKEK
                 </p>
               </div>
