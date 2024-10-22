@@ -4,11 +4,8 @@ export default {
   theme: {
     extend: {},
     screens: {
-      tablet: "600px",
-      // => @media (min-width: 576px) { ... }
-
+      tablet: "700px",
       desktop: "1024px",
-      // => @media (min-width: 960px) { ... }
     },
   },
   plugins: [],
