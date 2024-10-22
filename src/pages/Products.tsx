@@ -5,12 +5,12 @@ export default function Products() {
   return (
     <AnimatePresence>
       <motion.div
-        className="flex flex-col justify-center items-center text-justify h-screen"
-        initial={{ y: 2100, opacity: 0 }}
+        className="flex flex-col justify-center items-center text-justify"
+        initial={{ y: 1000, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         exit={{ y: 1000, opacity: 0 }}
         transition={{
-          duration: 2,
+          duration: 0.8,
           ease: "anticipate",
         }}
       >
