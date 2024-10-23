@@ -74,40 +74,38 @@ export default function Advertisement() {
               </div>
             </div>
 
-            <h1 className="text-2xl tablet:text-5xl desktop:text-7xl text-center mb-[2rem] tablet:mb-[4rem] mt-[10rem] tablet:mt-[20rem] desktop:mt-[22rem]">
-              TAKILANLARA
-            </h1>
-            <p className="text-md animate-bounce tablet:text-xl desktop:text-2xl text-center mb-[3rem] tablet:mb-[4rem]">
+            <p className="text-md animate-bounce tablet:text-xl desktop:text-2xl text-center mb-[3rem] tablet:mb-[4rem] mt-[10rem] tablet:mt-[20rem] desktop:mt-[22rem]">
               Koleksiyonlara gitmek için seçim yapınız ⤵
             </p>
             <div className="flex justify-center items-center mb-[10rem]">
-              <div className="cursor-pointer" onClick={handleShow}>
-                <div className="tablet:w-[320px] desktop:w-auto overflow-hidden">
+              <div className="cursor-pointer relative" onClick={handleShow}>
+                <div className="w-[calc(100vw/2)] overflow-hidden">
                   <img
                     className="object-cover hover:scale-110 transition-all duration-300 overflow-hidden"
                     src="/images/introduction/women.jpg"
                     alt="Women"
                   />
                 </div>
-                <p className="text-center text-white mix-blend-overlay pointer-events-none text-4xl tablet:text-6xl desktop:text-9xl relative -top-[100px] tablet:-top-[180px] desktop:-top-[350px]">
+                <p className="text-white w-[100%] text-center mix-blend-overlay pointer-events-none text-6xl tablet:text-8xl desktop:text-9xl absolute top-[80px] tablet:top-[140px] desktop:top-[200px]">
                   KADIN
                 </p>
               </div>
 
-              <div className="cursor-pointer" onClick={handleShow}>
-                <div className="tablet:w-[320px] desktop:w-auto overflow-hidden">
+              <div className="cursor-pointer relative" onClick={handleShow}>
+                <div className="w-[calc(100vw/2)] overflow-hidden">
                   <img
                     className="object-cover hover:scale-110 transition-all duration-300 overflow-hidden"
                     src="/images/introduction/men.jpg"
                     alt="Men"
                   />
                 </div>
-                <p className="text-center text-white mix-blend-overlay pointer-events-none text-4xl tablet:text-6xl desktop:text-9xl relative -top-[100px] tablet:-top-[180px] desktop:-top-[350px]">
+                <p className="text-white w-[100%] text-center mix-blend-overlay pointer-events-none text-6xl tablet:text-8xl desktop:text-9xl absolute top-[80px] tablet:top-[140px] desktop:top-[200px]">
                   ERKEK
                 </p>
               </div>
             </div>
           </div>
+            <small className="text-center mb-[20px]">GÜLLÜ</small>
         </motion.div>
       )}
     </AnimatePresence>
