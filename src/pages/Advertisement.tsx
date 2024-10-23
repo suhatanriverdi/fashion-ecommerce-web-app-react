@@ -27,48 +27,48 @@ export default function Advertisement() {
           }}
         >
           <div className="tablet:max-w-[30rem] desktop:max-w-[60rem] w-full">
-            <h1 className="text-l tablet:text-2xl desktop:text-3xl text-center mt-[40px]">
+            <h1 className="text-sm tablet:text-2xl desktop:text-3xl text-center mt-[40px]">
               GÜLLÜ
             </h1>
 
-            <div className="flex items-center justify-between mt-[12rem] w-full desktop:px-[5rem]">
+            <div className="flex items-center justify-between mt-[12rem] w-full px-[3.5rem] desktop:px-[5rem]">
               <div className="relative">
                 <img
                   className="object-cover -rotate-6 w-[12rem] tablet:w-[18rem] desktop:w-[30rem]"
                   src="/images/advertisement/green.jpg"
                   alt="Women Wearing Green Sweats"
                 />
-                <div className="bg-green-300 -rotate-6 absolute -z-[1] -top-[1.3rem] right-[2rem] tablet:right-[3rem] w-[10rem] h-[15rem] tablet:-top-[1.6rem] desktop:-top-[2.2rem] tablet:w-[18rem] desktop:w-[31rem] tablet:h-[22rem] desktop:h-[35rem]"></div>
+                <div className="bg-green-300 -rotate-6 absolute -z-[1] -top-[1.3rem] right-[3.7rem] tablet:right-[3rem] w-[10rem] h-[15rem] tablet:-top-[1.6rem] desktop:-top-[2.2rem] tablet:w-[18rem] desktop:w-[31rem] tablet:h-[22rem] desktop:h-[35rem]"></div>
               </div>
-              <p className="text-4xl tablet:text-6xl desktop:text-7xl">SADE</p>
+              <p className="text-2xl tablet:text-6xl desktop:text-7xl">SADE</p>
             </div>
 
-            <div className="flex items-center justify-between mt-[12rem] w-full desktop:px-[5rem]">
-              <p className="text-4xl tablet:text-6xl desktop:text-7xl">BOL</p>
+            <div className="flex items-center justify-between mt-[12rem] w-full px-[3.5rem] desktop:px-[5rem]">
+              <p className="text-2xl tablet:text-6xl desktop:text-7xl">BOL</p>
               <div className="relative">
                 <img
                   className="object-cover rotate-6 w-[12rem] tablet:w-[18rem] desktop:w-[30rem]"
                   src="/images/advertisement/blue.jpg"
                   alt="Women Wearing Green Sweats"
                 />
-                <div className="bg-cyan-300 rotate-6 absolute -z-[1] -top-[1.3rem] -right-[2.5rem] tablet:-right-[2rem] w-[10rem] h-[15rem] tablet:-top-[1.6rem] desktop:-top-[2.2rem] tablet:w-[18rem] desktop:w-[31rem] tablet:h-[22rem] desktop:h-[35rem]"></div>
+                <div className="bg-cyan-300 rotate-6 absolute -z-[1] -top-[1.3rem] -right-[1.8rem] tablet:-right-[2rem] w-[10rem] h-[15rem] tablet:-top-[1.6rem] desktop:-top-[2.2rem] tablet:w-[18rem] desktop:w-[31rem] tablet:h-[22rem] desktop:h-[35rem]"></div>
               </div>
             </div>
 
-            <div className="flex items-center justify-between mt-[12rem] w-full desktop:px-[5rem]">
+            <div className="flex items-center justify-between mt-[12rem] w-full px-[3.5rem] desktop:px-[5rem]">
               <div className="relative">
                 <img
-                  className="object-cover -rotate-6 w-[12rem] h-[12rem] tablet:h-[18rem] tablet:w-[18rem] desktop:h-[30rem] desktop:w-[30rem]"
+                  className="object-cover -rotate-6 w-[11rem] h-[11rem] tablet:h-[18rem] tablet:w-[18rem] desktop:h-[30rem] desktop:w-[30rem]"
                   src="/images/advertisement/orange.jpg"
                   alt="Women Wearing Green Sweats"
                 />
-                <div className="bg-orange-300 -rotate-6 absolute -z-[1] -top-[1.3rem] right-[2rem] tablet:right-[3rem] w-[10rem] h-[15rem] tablet:-top-[1.6rem] desktop:-top-[2.2rem] tablet:w-[18rem] desktop:w-[31rem] tablet:h-[22rem] desktop:h-[35rem]"></div>
+                <div className="bg-orange-300 -rotate-6 absolute -z-[1] -top-[1.3rem] right-[3rem] tablet:right-[3rem] w-[10rem] h-[14rem] tablet:-top-[1.6rem] desktop:-top-[2.2rem] tablet:w-[18rem] desktop:w-[31rem] tablet:h-[22rem] desktop:h-[35rem]"></div>
               </div>
               <div>
                 <p className="text-xl tablet:text-2xl desktop:text-3xl text-center">
                   ve
                 </p>
-                <p className="text-4xl tablet:text-6xl desktop:text-7xl">
+                <p className="text-2xl tablet:text-6xl desktop:text-7xl">
                   RAHAT
                 </p>
               </div>
