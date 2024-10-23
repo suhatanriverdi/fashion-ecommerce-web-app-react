@@ -38,7 +38,7 @@ export default function Advertisement() {
                   src="/images/advertisement/green.jpg"
                   alt="Women Wearing Green Sweats"
                 />
-                <div className="bg-green-300 -rotate-6 absolute -z-[1] -top-[1.3rem] right-[3.7rem] tablet:right-[4rem] w-[10rem] h-[15rem] tablet:-top-[1.6rem] desktop:-top-[2.2rem] tablet:w-[16rem] desktop:w-[31rem] tablet:h-[22rem] desktop:h-[35rem]"></div>
+                <div className="bg-green-300 -rotate-6 absolute -z-[1] -top-[1.3rem] desktop:right-[2rem] right-[3.7rem] tablet:right-[4rem] w-[10rem] h-[15rem] tablet:-top-[1.6rem] desktop:-top-[2.2rem] tablet:w-[16rem] desktop:w-[31rem] tablet:h-[22rem] desktop:h-[35rem]"></div>
               </div>
               <p className="text-2xl tablet:text-6xl desktop:text-7xl">SADE</p>
             </div>
@@ -51,7 +51,7 @@ export default function Advertisement() {
                   src="/images/advertisement/blue.jpg"
                   alt="Women Wearing Green Sweats"
                 />
-                <div className="bg-cyan-300 rotate-6 absolute -z-[1] -top-[1.3rem] -right-[1.8rem] tablet:-right-[2rem] w-[10rem] h-[15rem] tablet:-top-[1.6rem] desktop:-top-[2.2rem] tablet:w-[15rem] desktop:w-[31rem] tablet:h-[22rem] desktop:h-[35rem]"></div>
+                <div className="bg-cyan-300 rotate-6 absolute -z-[1] -top-[1.3rem] -right-[1.8rem] tablet:-right-[2rem] desktop:-right-[2.7rem] w-[10rem] h-[15rem] tablet:-top-[1.6rem] desktop:-top-[2.2rem] tablet:w-[15rem] desktop:w-[29rem] tablet:h-[22rem] desktop:h-[35rem]"></div>
               </div>
             </div>
 
@@ -80,9 +80,9 @@ export default function Advertisement() {
             <p className="text-md animate-bounce tablet:text-xl desktop:text-2xl text-center mb-[3rem] tablet:mb-[4rem]">
               Koleksiyonlara gitmek için seçim yapınız ⤵
             </p>
-            <div className="flex justify-between items-center">
+            <div className="flex justify-center items-center mb-[10rem]">
               <div className="cursor-pointer" onClick={handleShow}>
-                <div className="max-w-[140px] tablet:max-w-[500px] overflow-hidden">
+                <div className="tablet:w-[320px] desktop:w-auto overflow-hidden">
                   <img
                     className="object-cover hover:scale-110 transition-all duration-300 overflow-hidden"
                     src="/images/introduction/women.jpg"
@@ -95,7 +95,7 @@ export default function Advertisement() {
               </div>
 
               <div className="cursor-pointer" onClick={handleShow}>
-                <div className="max-w-[140px] tablet:max-w-[500px] overflow-hidden">
+                <div className="tablet:w-[320px] desktop:w-auto overflow-hidden">
                   <img
                     className="object-cover hover:scale-110 transition-all duration-300 overflow-hidden"
                     src="/images/introduction/men.jpg"
