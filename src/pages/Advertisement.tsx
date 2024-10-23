@@ -26,42 +26,55 @@ export default function Advertisement() {
             ease: "anticipate",
           }}
         >
-          <div className="tablet:max-w-[30rem] desktop:max-w-[80rem] w-full">
-            <h1 className="text-xl desktop:text-3xl text-center mt-[4rem]">
+          <div className="tablet:max-w-[30rem] desktop:max-w-[60rem] w-full">
+            <h1 className="text-l tablet:text-2xl desktop:text-3xl text-center mt-[40px]">
               GÜLLÜ
             </h1>
 
-            <div className="flex items-center justify-between mt-[12rem] w-full px-[8rem]">
-              <img
-                className=""
-                src="/images/advertisement/green.jpg"
-                alt="Women Wearing Green Sweats"
-              />
-              <p className="text-4xl tablet:text-9xl">SADE</p>
+            <div className="flex items-center justify-between mt-[12rem] w-full">
+              <div className="relative">
+                <img
+                  className="object-cover -rotate-6 w-[12rem] tablet:w-[18rem] desktop:w-[30rem]"
+                  src="/images/advertisement/green.jpg"
+                  alt="Women Wearing Green Sweats"
+                />
+                <div className="bg-green-300 -rotate-6 relative -z-[1] -top-[13rem] right-[2rem] tablet:right-[3rem] w-[10rem] h-[15rem] tablet:-top-[19.8rem] desktop:-top-[32.3rem] tablet:w-[18rem] desktop:w-[31rem] tablet:h-[22rem] desktop:h-[35rem]"></div>
+              </div>
+              <p className="text-4xl tablet:text-6xl desktop:text-8xl">SADE</p>
             </div>
 
-            <div className="flex items-center justify-between mt-[12rem] w-full px-[8rem]">
-              <p className="text-4xl tablet:text-9xl">BOL</p>
-              <img
-                className="object-cover"
-                src="/images/advertisement/blue.jpg"
-                alt="Women Wearing Green Sweats"
-              />
-            </div>
-
-            <div className="flex items-center justify-between mt-[12rem] w-full px-[8rem]">
-              <img
-                className="object-cover"
-                src="/images/advertisement/orange.jpg"
-                alt="Women Wearing Green Sweats"
-              />
-              <div>
-                <p className="text-3xl text-center">ve</p>
-                <p className="text-4xl tablet:text-9xl">RAHAT</p>
+            <div className="flex items-center justify-between mt-[12rem] w-full">
+              <p className="text-4xl tablet:text-6xl desktop:text-8xl">BOL</p>
+              <div className="relative">
+                <img
+                  className="object-cover rotate-6 w-[12rem] tablet:w-[18rem] desktop:w-[30rem]"
+                  src="/images/advertisement/blue.jpg"
+                  alt="Women Wearing Green Sweats"
+                />
+                <div className="bg-cyan-300 rotate-6 relative -z-[1] -top-[13rem] -right-[2.5rem] tablet:-right-[2rem] w-[10rem] h-[15rem] tablet:-top-[19.8rem] desktop:-top-[32.3rem] tablet:w-[18rem] desktop:w-[31rem] tablet:h-[22rem] desktop:h-[35rem]"></div>
               </div>
             </div>
 
-            <h1 className="text-4xl tablet:text-9xl text-center mt-[24rem] mb-[4rem]">
+            <div className="flex items-center justify-between mt-[12rem] w-full">
+              <div className="relative">
+                <img
+                  className="object-cover -rotate-6 w-[12rem] h-[12rem] tablet:h-[18rem] tablet:w-[18rem] desktop:h-[30rem] desktop:w-[30rem]"
+                  src="/images/advertisement/orange.jpg"
+                  alt="Women Wearing Green Sweats"
+                />
+                <div className="bg-orange-300 -rotate-6 relative -z-[1] -top-[13rem] right-[2rem] tablet:right-[3rem] w-[10rem] h-[15rem] tablet:-top-[19.8rem] desktop:-top-[32.3rem] tablet:w-[18rem] desktop:w-[31rem] tablet:h-[22rem] desktop:h-[35rem]"></div>
+              </div>
+              <div>
+                <p className="text-xl tablet:text-2xl desktop:text-3xl text-center">
+                  ve
+                </p>
+                <p className="text-4xl tablet:text-6xl desktop:text-8xl">
+                  RAHAT
+                </p>
+              </div>
+            </div>
+
+            <h1 className="text-4xl tablet:text-7xl desktop:text-9xl text-center mt-[24rem] mb-[4rem]">
               TAKILANLARA
             </h1>
             <p className="text-md tablet:text-3xl text-center mb-[4rem]">
