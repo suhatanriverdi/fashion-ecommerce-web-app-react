@@ -79,9 +79,9 @@ export default function Advertisement() {
             </p>
             <div className="flex justify-center items-center mb-[10rem]">
               <div className="cursor-pointer relative" onClick={handleShow}>
-                <div className="w-[calc(100vw/2)] overflow-hidden">
+                <div className="overflow-hidden tablet:w-[20rem] desktop:w-[100%]">
                   <img
-                    className="object-cover hover:scale-110 transition-all duration-300 overflow-hidden"
+                    className="object-cover hover:scale-125 tablet:hover:scale-110 transition-all duration-300 overflow-hidden"
                     src="/images/introduction/women.jpg"
                     alt="Women"
                   />
@@ -92,9 +92,9 @@ export default function Advertisement() {
               </div>
 
               <div className="cursor-pointer relative" onClick={handleShow}>
-                <div className="w-[calc(100vw/2)] overflow-hidden">
+                <div className="overflow-hidden tablet:w-[20rem] desktop:w-[100%]">
                   <img
-                    className="object-cover hover:scale-110 transition-all duration-300 overflow-hidden"
+                    className="object-cover hover:scale-125 tablet:hover:scale-110 transition-all duration-300 overflow-hidden"
                     src="/images/introduction/men.jpg"
                     alt="Men"
                   />
