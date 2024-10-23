@@ -38,7 +38,7 @@ export default function Advertisement() {
                   src="/images/advertisement/green.jpg"
                   alt="Women Wearing Green Sweats"
                 />
-                <div className="bg-green-300 -rotate-6 relative -z-[1] -top-[13rem] right-[2rem] tablet:right-[3rem] w-[10rem] h-[15rem] tablet:-top-[19.8rem] desktop:-top-[32.3rem] tablet:w-[18rem] desktop:w-[31rem] tablet:h-[22rem] desktop:h-[35rem]"></div>
+                <div className="bg-green-300 -rotate-6 absolute -z-[1] -top-[1.3rem] right-[2rem] tablet:right-[3rem] w-[10rem] h-[15rem] tablet:-top-[1.6rem] desktop:-top-[2.2rem] tablet:w-[18rem] desktop:w-[31rem] tablet:h-[22rem] desktop:h-[35rem]"></div>
               </div>
               <p className="text-4xl tablet:text-6xl desktop:text-8xl">SADE</p>
             </div>
@@ -51,7 +51,7 @@ export default function Advertisement() {
                   src="/images/advertisement/blue.jpg"
                   alt="Women Wearing Green Sweats"
                 />
-                <div className="bg-cyan-300 rotate-6 relative -z-[1] -top-[13rem] -right-[2.5rem] tablet:-right-[2rem] w-[10rem] h-[15rem] tablet:-top-[19.8rem] desktop:-top-[32.3rem] tablet:w-[18rem] desktop:w-[31rem] tablet:h-[22rem] desktop:h-[35rem]"></div>
+                <div className="bg-cyan-300 rotate-6 absolute -z-[1] -top-[1.3rem] -right-[2.5rem] tablet:-right-[2rem] w-[10rem] h-[15rem] tablet:-top-[1.6rem] desktop:-top-[2.2rem] tablet:w-[18rem] desktop:w-[31rem] tablet:h-[22rem] desktop:h-[35rem]"></div>
               </div>
             </div>
 
@@ -62,7 +62,7 @@ export default function Advertisement() {
                   src="/images/advertisement/orange.jpg"
                   alt="Women Wearing Green Sweats"
                 />
-                <div className="bg-orange-300 -rotate-6 relative -z-[1] -top-[13rem] right-[2rem] tablet:right-[3rem] w-[10rem] h-[15rem] tablet:-top-[19.8rem] desktop:-top-[32.3rem] tablet:w-[18rem] desktop:w-[31rem] tablet:h-[22rem] desktop:h-[35rem]"></div>
+                <div className="bg-orange-300 -rotate-6 absolute -z-[1] -top-[1.3rem] right-[2rem] tablet:right-[3rem] w-[10rem] h-[15rem] tablet:-top-[1.6rem] desktop:-top-[2.2rem] tablet:w-[18rem] desktop:w-[31rem] tablet:h-[22rem] desktop:h-[35rem]"></div>
               </div>
               <div>
                 <p className="text-xl tablet:text-2xl desktop:text-3xl text-center">
