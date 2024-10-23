@@ -31,7 +31,7 @@ export default function Advertisement() {
               GÜLLÜ
             </h1>
 
-            <div className="flex items-center justify-between mt-[12rem] w-full">
+            <div className="flex items-center justify-between mt-[12rem] w-full desktop:px-[5rem]">
               <div className="relative">
                 <img
                   className="object-cover -rotate-6 w-[12rem] tablet:w-[18rem] desktop:w-[30rem]"
@@ -40,11 +40,11 @@ export default function Advertisement() {
                 />
                 <div className="bg-green-300 -rotate-6 absolute -z-[1] -top-[1.3rem] right-[2rem] tablet:right-[3rem] w-[10rem] h-[15rem] tablet:-top-[1.6rem] desktop:-top-[2.2rem] tablet:w-[18rem] desktop:w-[31rem] tablet:h-[22rem] desktop:h-[35rem]"></div>
               </div>
-              <p className="text-4xl tablet:text-6xl desktop:text-8xl">SADE</p>
+              <p className="text-4xl tablet:text-6xl desktop:text-7xl">SADE</p>
             </div>
 
-            <div className="flex items-center justify-between mt-[12rem] w-full">
-              <p className="text-4xl tablet:text-6xl desktop:text-8xl">BOL</p>
+            <div className="flex items-center justify-between mt-[12rem] w-full desktop:px-[5rem]">
+              <p className="text-4xl tablet:text-6xl desktop:text-7xl">BOL</p>
               <div className="relative">
                 <img
                   className="object-cover rotate-6 w-[12rem] tablet:w-[18rem] desktop:w-[30rem]"
@@ -55,7 +55,7 @@ export default function Advertisement() {
               </div>
             </div>
 
-            <div className="flex items-center justify-between mt-[12rem] w-full">
+            <div className="flex items-center justify-between mt-[12rem] w-full desktop:px-[5rem]">
               <div className="relative">
                 <img
                   className="object-cover -rotate-6 w-[12rem] h-[12rem] tablet:h-[18rem] tablet:w-[18rem] desktop:h-[30rem] desktop:w-[30rem]"
@@ -68,13 +68,13 @@ export default function Advertisement() {
                 <p className="text-xl tablet:text-2xl desktop:text-3xl text-center">
                   ve
                 </p>
-                <p className="text-4xl tablet:text-6xl desktop:text-8xl">
+                <p className="text-4xl tablet:text-6xl desktop:text-7xl">
                   RAHAT
                 </p>
               </div>
             </div>
 
-            <h1 className="text-4xl tablet:text-7xl desktop:text-9xl text-center mt-[24rem] mb-[4rem]">
+            <h1 className="text-4xl tablet:text-5xl desktop:text-7xl text-center mt-[24rem] mb-[4rem]">
               TAKILANLARA
             </h1>
             <p className="text-md tablet:text-3xl text-center mb-[4rem]">
@@ -89,7 +89,7 @@ export default function Advertisement() {
                     alt="Women"
                   />
                 </div>
-                <p className="text-center text-white mix-blend-overlay pointer-events-none text-[2.2rem] tablet:text-[10rem] relative -top-[100px] tablet:-top-[400px]">
+                <p className="text-center text-white mix-blend-overlay pointer-events-none text-4xl tablet:text-6xl desktop:text-9xl relative -top-[100px] tablet:-top-[180px] desktop:-top-[350px]">
                   KADIN
                 </p>
               </div>
@@ -102,7 +102,7 @@ export default function Advertisement() {
                     alt="Men"
                   />
                 </div>
-                <p className="text-center text-white mix-blend-overlay pointer-events-none text-[2.2rem] tablet:text-[10rem] relative -top-[100px] tablet:-top-[400px]">
+                <p className="text-center text-white mix-blend-overlay pointer-events-none text-4xl tablet:text-6xl desktop:text-9xl relative -top-[100px] tablet:-top-[180px] desktop:-top-[350px]">
                   ERKEK
                 </p>
               </div>
