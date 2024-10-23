@@ -74,11 +74,11 @@ export default function Advertisement() {
               </div>
             </div>
 
-            <h1 className="text-4xl tablet:text-5xl desktop:text-7xl text-center mt-[24rem] mb-[4rem]">
+            <h1 className="text-2xl tablet:text-5xl desktop:text-7xl text-center mt-[10rem] mb-[2rem]">
               TAKILANLARA
             </h1>
-            <p className="text-md tablet:text-3xl text-center mb-[4rem]">
-              Koleksiyonlara gitmek için seçim yapınız
+            <p className="text-md animate-bounce tablet:text-3xl text-center mb-[3rem]">
+              Koleksiyonlara gitmek için seçim yapınız ⤵
             </p>
             <div className="flex justify-between items-center">
               <div className="cursor-pointer" onClick={handleShow}>
