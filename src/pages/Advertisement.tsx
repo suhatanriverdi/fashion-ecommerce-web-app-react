@@ -1,10 +1,28 @@
-import { motion, AnimatePresence } from "framer-motion";
-import { useState } from "react";
+import {
+  motion,
+  AnimatePresence,
+  useScroll,
+  useTransform,
+} from "framer-motion";
+import { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function Advertisement() {
   const navigate = useNavigate();
   const [show, setShow] = useState(true);
+
+  // Parallax Effect
+  const container = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: container,
+    offset: ["start end", "end start"],
+  });
+
+  const parallaxRatio = useTransform(scrollYProgress, [0, 1], [-200, 200]);
+
+  scrollYProgress.on("change", (scrollYProgress) => {
+    console.log(parallaxRatio.get());
+  });
 
   const handleShow = () => {
     setShow(false);
@@ -17,6 +35,7 @@ export default function Advertisement() {
     <AnimatePresence>
       {show && (
         <motion.div
+          ref={container}
           className="flex flex-col justify-center items-center text-justify"
           initial={{ y: 1000, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -34,11 +53,17 @@ export default function Advertisement() {
             <div className="flex items-center justify-between mt-[12rem] w-full px-[3.5rem] tablet:px-16  desktop:px-[5rem]">
               <div className="relative">
                 <img
-                  className="object-cover -rotate-6 w-[12rem] tablet:w-max-[18rem] desktop:w-[30rem]"
+                  className="shadow-2xl object-cover -rotate-6 w-[12rem] tablet:w-max-[18rem] desktop:w-[30rem]"
                   src="/images/advertisement/green.jpg"
                   alt="Women Wearing Green Sweats"
                 />
-                <div className="bg-green-300 -rotate-6 absolute -z-[1] -top-[1.3rem] desktop:right-[2rem] right-[3.7rem] tablet:right-[2rem] w-[10rem] h-[15rem] tablet:-top-[1.6rem] desktop:-top-[2.2rem] tablet:w-[11.5rem] desktop:w-[31rem] tablet:h-[15.7rem] desktop:h-[35rem]"></div>
+                <motion.div
+                  style={{
+                    top: parallaxRatio,
+                    filter: `blur(${parallaxRatio}px)`,
+                  }}
+                  className="bg-green-300 -rotate-6 absolute -z-[1] -top-[1.3rem] desktop:right-[2rem] right-[3.7rem] tablet:right-[2rem] w-[10rem] h-[15rem] tablet:-top-[1.6rem] desktop:-top-[2.2rem] tablet:w-[11.5rem] desktop:w-[31rem] tablet:h-[15.7rem] desktop:h-[35rem]"
+                ></motion.div>
               </div>
               <p className="text-2xl tablet:text-6xl desktop:text-7xl">SADE</p>
             </div>
@@ -47,22 +72,34 @@ export default function Advertisement() {
               <p className="text-2xl tablet:text-6xl desktop:text-7xl">BOL</p>
               <div className="relative">
                 <img
-                  className="object-cover rotate-6 w-[12rem] tablet:w-max-[18rem] desktop:w-[30rem]"
+                  className="shadow-2xl object-cover rotate-6 w-[12rem] tablet:w-max-[18rem] desktop:w-[30rem]"
                   src="/images/advertisement/blue.jpg"
                   alt="Women Wearing Green Sweats"
                 />
-                <div className="bg-cyan-300 rotate-6 absolute -z-[1] -top-[1.3rem] -right-[1.8rem] tablet:-right-[1.7rem] desktop:-right-[2.7rem] w-[10rem] h-[15rem] tablet:-top-[1.4rem] desktop:-top-[2.2rem] tablet:w-[12rem] desktop:w-[29rem] tablet:h-[15.7] desktop:h-[35rem]"></div>
+                <motion.div
+                  style={{
+                    top: parallaxRatio,
+                    filter: `blur(${parallaxRatio}px)`,
+                  }}
+                  className="bg-cyan-300 rotate-6 absolute -z-[1] -top-[1.3rem] -right-[1.8rem] tablet:-right-[1.7rem] desktop:-right-[2.7rem] w-[10rem] h-[15rem] tablet:-top-[1.4rem] desktop:-top-[2.2rem] tablet:w-[12rem] desktop:w-[29rem] tablet:h-[15.7] desktop:h-[35rem]"
+                ></motion.div>
               </div>
             </div>
 
             <div className="flex items-center justify-between mt-[12rem] w-full pl-[4rem] pr-[3rem] tablet:px-16 desktop:px-[5rem]">
               <div className="relative">
                 <img
-                  className="object-cover -rotate-6 w-[11rem] h-[11rem] tablet:w-max-[15rem] tablet:h-[11.5rem] desktop:h-[30rem] desktop:w-[30rem]"
+                  className="shadow-2xl object-cover -rotate-6 w-[11rem] h-[11rem] tablet:w-max-[15rem] tablet:h-[11.5rem] desktop:h-[30rem] desktop:w-[30rem]"
                   src="/images/advertisement/orange.jpg"
                   alt="Women Wearing Green Sweats"
                 />
-                <div className="bg-orange-300 -rotate-6 absolute -z-[1] -top-[1.3rem] right-[3rem] tablet:right-[2rem] w-[10rem] h-[14rem] tablet:-top-[1.6rem] desktop:-top-[2.2rem] tablet:w-[10.5rem] desktop:w-[31rem] tablet:h-[15rem] desktop:h-[35rem]"></div>
+                <motion.div
+                  style={{
+                    top: parallaxRatio,
+                    filter: `blur(${parallaxRatio}px)`,
+                  }}
+                  className="bg-orange-300 -rotate-6 absolute -z-[1] -top-[1.3rem] right-[3rem] tablet:right-[2rem] w-[10rem] h-[14rem] tablet:-top-[1.6rem] desktop:-top-[2.2rem] tablet:w-[10.5rem] desktop:w-[31rem] tablet:h-[15rem] desktop:h-[35rem]"
+                ></motion.div>
               </div>
               <div>
                 <p className="text-md tablet:text-2xl desktop:text-3xl text-center">
