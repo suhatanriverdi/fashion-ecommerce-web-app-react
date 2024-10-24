@@ -8,12 +8,12 @@ export default function Introduction() {
 
   useEffect(() => {
     const timerAnim = setTimeout(() => {
-      // setShow(false);
+      setShow(false);
     }, 3000);
 
     // Forward to advertisement page after 3 seconds
     const timer = setTimeout(() => {
-      // nagivate("/advertisement");
+      nagivate("/advertisement");
     }, 3600);
 
     return () => {
