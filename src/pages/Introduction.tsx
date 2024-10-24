@@ -8,12 +8,12 @@ export default function Introduction() {
 
   useEffect(() => {
     const timerAnim = setTimeout(() => {
-      setShow(false);
+      // setShow(false);
     }, 3000);
 
     // Forward to advertisement page after 3 seconds
     const timer = setTimeout(() => {
-      nagivate("/advertisement");
+      // nagivate("/advertisement");
     }, 3600);
 
     return () => {
@@ -34,7 +34,7 @@ export default function Introduction() {
             duration: 0.8,
             ease: "anticipate",
           }}
-          className="flex justify-center items-center h-screen w-screen"
+          className="flex justify-center items-center h-screen w-screen -mt-[80px]"
         >
           <h1 className="z-10 text-[9rem] tablet:text-[18rem] mix-blend-overlay text-white drop-shadow-[0_20px_20px_rgba(0,100,50,0.9)] fixed">
             <motion.div
@@ -55,7 +55,7 @@ export default function Introduction() {
               }}
             >
               <img
-                className="object-cover h-[220px] w-[200px] tablet:h-[500px] tablet:w-auto"
+                className="object-cover h-[30rem] w-auto tablet:h-[500px] tablet:w-auto"
                 src="/images/introduction/men.jpg"
                 alt="Model men photo"
               />
@@ -70,7 +70,7 @@ export default function Introduction() {
               }}
             >
               <img
-                className="object-cover h-[287px] w-[200px] tablet:h-[500px] tablet:w-auto"
+                className="object-cover h-[30rem] w-auto tablet:h-[500px] tablet:w-auto"
                 src="/images/introduction/women.jpg"
                 alt="Model women photo"
               />

@@ -26,12 +26,12 @@ export default function Advertisement() {
             ease: "anticipate",
           }}
         >
-          <div className="tablet:max-w-[40rem] desktop:max-w-[70rem] w-full">
+          <div className="tablet:max-w-[50rem] desktop:max-w-[70rem] w-full">
             <h1 className="text-sm tablet:text-2xl desktop:text-3xl text-center mt-[20px]">
               GÜLLÜ
             </h1>
 
-            <div className="flex items-center justify-between mt-[12rem] w-full px-[3.5rem] tablet:px-10  desktop:px-[5rem]">
+            <div className="flex items-center justify-between mt-[12rem] w-full px-[3.5rem] tablet:px-16  desktop:px-[5rem]">
               <div className="relative">
                 <img
                   className="object-cover -rotate-6 w-[12rem] tablet:w-max-[18rem] desktop:w-[30rem]"
@@ -43,7 +43,7 @@ export default function Advertisement() {
               <p className="text-2xl tablet:text-6xl desktop:text-7xl">SADE</p>
             </div>
 
-            <div className="flex items-center justify-between mt-[12rem] w-full px-[3.5rem] tablet:px-10 desktop:px-[5rem]">
+            <div className="flex items-center justify-between mt-[12rem] w-full px-[3.5rem] tablet:px-20 desktop:px-[5rem]">
               <p className="text-2xl tablet:text-6xl desktop:text-7xl">BOL</p>
               <div className="relative">
                 <img
@@ -55,7 +55,7 @@ export default function Advertisement() {
               </div>
             </div>
 
-            <div className="flex items-center justify-between mt-[12rem] w-full pl-[4rem] pr-[3rem] tablet:px-10 desktop:px-[5rem]">
+            <div className="flex items-center justify-between mt-[12rem] w-full pl-[4rem] pr-[3rem] tablet:px-16 desktop:px-[5rem]">
               <div className="relative">
                 <img
                   className="object-cover -rotate-6 w-[11rem] h-[11rem] tablet:w-max-[15rem] tablet:h-[11.5rem] desktop:h-[30rem] desktop:w-[30rem]"
@@ -79,33 +79,33 @@ export default function Advertisement() {
             </p>
             <div className="flex justify-center items-center mb-[10rem]">
               <div className="cursor-pointer relative" onClick={handleShow}>
-                <div className="overflow-hidden tablet:max-w-[20rem] desktop:w-[100%]">
+                <div className="overflow-hidden tablet:max-w-[30rem] desktop:max-w-[40rem]">
                   <img
-                    className="object-cover hover:scale-125 tablet:hover:scale-110 transition-all duration-300 overflow-hidden"
+                    className="object-cover w-full h-full hover:scale-125 tablet:hover:scale-110 transition-all duration-300 overflow-hidden"
                     src="/images/introduction/women.jpg"
                     alt="Women"
                   />
                 </div>
-                <p className="text-white w-[100%] text-center mix-blend-overlay pointer-events-none text-6xl tablet:text-7xl desktop:text-9xl absolute top-[80px] tablet:top-[140px] desktop:top-[200px]">
+                <p className="text-white w-[100%] text-center mix-blend-overlay pointer-events-none text-6xl tablet:text-7xl desktop:text-9xl absolute top-[80px] tablet:top-[140px] desktop:top-[190px]">
                   KADIN
                 </p>
               </div>
 
               <div className="cursor-pointer relative" onClick={handleShow}>
-                <div className="overflow-hidden tablet:max-w-[20rem] desktop:w-[100%]">
+                <div className="overflow-hidden tablet:max-w-[30rem] desktop:max-w-[40rem]">
                   <img
-                    className="object-cover hover:scale-125 tablet:hover:scale-110 transition-all duration-300 overflow-hidden"
+                    className="object-cover w-full h-full hover:scale-125 tablet:hover:scale-110 transition-all duration-300 overflow-hidden"
                     src="/images/introduction/men.jpg"
                     alt="Men"
                   />
                 </div>
-                <p className="text-white w-[100%] text-center mix-blend-overlay pointer-events-none text-6xl tablet:text-7xl desktop:text-9xl absolute top-[80px] tablet:top-[140px] desktop:top-[200px]">
+                <p className="text-white w-[100%] text-center mix-blend-overlay pointer-events-none text-6xl tablet:text-7xl desktop:text-9xl absolute top-[80px] tablet:top-[140px] desktop:top-[190px]">
                   ERKEK
                 </p>
               </div>
             </div>
           </div>
-            <small className="text-center mb-[20px]">GÜLLÜ</small>
+          <small className="text-center mb-[20px]">GÜLLÜ</small>
         </motion.div>
       )}
     </AnimatePresence>
