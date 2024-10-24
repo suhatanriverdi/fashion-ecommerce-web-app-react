@@ -34,9 +34,9 @@ export default function Introduction() {
             duration: 0.8,
             ease: "anticipate",
           }}
-          className="flex justify-center items-center h-screen w-screen -mt-[80px]"
+          className="flex justify-center items-center mt-[10rem]"
         >
-          <h1 className="z-10 text-[9rem] tablet:text-[18rem] mix-blend-overlay text-white drop-shadow-[0_20px_20px_rgba(0,100,50,0.9)] fixed">
+          <h1 className="fixed mix-blend-overlay z-10 text-[34vw] tablet:text-[36vw] desktop:text-[24rem] text-white drop-shadow-[0_20px_20px_rgba(0,100,50,0.9)]">
             <motion.div
               initial={{ opacity: 0, scale: 0 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -55,7 +55,7 @@ export default function Introduction() {
               }}
             >
               <img
-                className="object-cover h-[30rem] w-auto tablet:h-[500px] tablet:w-auto"
+                className="object-cover w-full h-full"
                 src="/images/introduction/men.jpg"
                 alt="Model men photo"
               />
@@ -70,7 +70,7 @@ export default function Introduction() {
               }}
             >
               <img
-                className="object-cover h-[30rem] w-auto tablet:h-[500px] tablet:w-auto"
+                className="object-cover w-full h-full"
                 src="/images/introduction/women.jpg"
                 alt="Model women photo"
               />
