@@ -8,12 +8,12 @@ export default function Introduction() {
 
   useEffect(() => {
     const timerAnim = setTimeout(() => {
-      setShow(false);
+      // setShow(false);
     }, 3000);
 
     // Forward to advertisement page after 3 seconds
     const timer = setTimeout(() => {
-      nagivate("/advertisement");
+      // nagivate("/advertisement");
     }, 3600);
 
     return () => {
@@ -31,7 +31,7 @@ export default function Introduction() {
           animate={{ scale: 1, opacity: 1 }}
           exit={{ scale: 0.8, opacity: 0, y: 100, z: -100 }}
           transition={{
-            duration: 0.8,
+            duration: 1,
             ease: "anticipate",
           }}
           className="flex justify-center items-center mt-[10rem]"
@@ -48,7 +48,7 @@ export default function Introduction() {
           <div className="flex">
             <motion.div
               initial={{ width: "0px" }}
-              animate={{ width: "auto" }}
+              animate={{ width: "200px" }}
               transition={{
                 duration: 3,
                 ease: "anticipate",
@@ -63,7 +63,7 @@ export default function Introduction() {
 
             <motion.div
               initial={{ width: "0px" }}
-              animate={{ width: "auto" }}
+              animate={{ width: "200px" }}
               transition={{
                 duration: 3,
                 ease: "anticipate",
