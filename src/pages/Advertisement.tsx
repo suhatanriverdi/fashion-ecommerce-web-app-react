@@ -26,7 +26,7 @@ export default function Advertisement() {
             ease: "anticipate",
           }}
         >
-          <div className="tablet:max-w-[30rem] desktop:max-w-[60rem] w-full">
+          <div className="tablet:max-w-[40rem] desktop:max-w-[70rem] w-full">
             <h1 className="text-sm tablet:text-2xl desktop:text-3xl text-center mt-[20px]">
               GÜLLÜ
             </h1>
@@ -79,27 +79,27 @@ export default function Advertisement() {
             </p>
             <div className="flex justify-center items-center mb-[10rem]">
               <div className="cursor-pointer relative" onClick={handleShow}>
-                <div className="overflow-hidden tablet:w-[20rem] desktop:w-[100%]">
+                <div className="overflow-hidden tablet:max-w-[20rem] desktop:w-[100%]">
                   <img
                     className="object-cover hover:scale-125 tablet:hover:scale-110 transition-all duration-300 overflow-hidden"
                     src="/images/introduction/women.jpg"
                     alt="Women"
                   />
                 </div>
-                <p className="text-white w-[100%] text-center mix-blend-overlay pointer-events-none text-6xl tablet:text-8xl desktop:text-9xl absolute top-[80px] tablet:top-[140px] desktop:top-[200px]">
+                <p className="text-white w-[100%] text-center mix-blend-overlay pointer-events-none text-6xl tablet:text-7xl desktop:text-9xl absolute top-[80px] tablet:top-[140px] desktop:top-[200px]">
                   KADIN
                 </p>
               </div>
 
               <div className="cursor-pointer relative" onClick={handleShow}>
-                <div className="overflow-hidden tablet:w-[20rem] desktop:w-[100%]">
+                <div className="overflow-hidden tablet:max-w-[20rem] desktop:w-[100%]">
                   <img
                     className="object-cover hover:scale-125 tablet:hover:scale-110 transition-all duration-300 overflow-hidden"
                     src="/images/introduction/men.jpg"
                     alt="Men"
                   />
                 </div>
-                <p className="text-white w-[100%] text-center mix-blend-overlay pointer-events-none text-6xl tablet:text-8xl desktop:text-9xl absolute top-[80px] tablet:top-[140px] desktop:top-[200px]">
+                <p className="text-white w-[100%] text-center mix-blend-overlay pointer-events-none text-6xl tablet:text-7xl desktop:text-9xl absolute top-[80px] tablet:top-[140px] desktop:top-[200px]">
                   ERKEK
                 </p>
               </div>
